@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MASTERCARD — Circles in Motion (Design System)</title>
+  <meta name="description" content="CCT 460 Design System Concept & Branding — Mastercard: Circles in Motion. Generative identity outputs + guidelines + process." />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Keep these only if you are running the p5 sketch on this page -->
+  <script defer src="p5.min.js"></script>
+  <script defer src="sketch.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header__inner">
+      <div class="brand">
+        <img class="brand__logo" src="images/logo_p1_web.png" alt="Logo variation" />
+        <div>
+          <div class="brand__title">MASTERCARD — Circles in Motion</div>
+          <div class="brand__subtitle">CCT 460 · Design System Concept & Branding · Lookbook Showcase</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Site">
+        <a href="#outputs">Outputs</a>
+        <a href="#guidelines">Guidelines</a>
+        <a href="#process">Process</a>
+        <a href="#reflection">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1>A generative brand system that scales: one set of rules, infinite variations.</h1>
+          <p class="lead">
+            Our design system for Mastercard is built around a simple but powerful rule:
+            two circles must always overlap. The overlap symbolizes connection and exchange,
+            while motion and seeded variation communicate reliable, continuous global flow.
+          </p>
+
+          <div class="chips">
+            <span class="chip">Design system rules</span>
+            <span class="chip">Seeded variation</span>
+            <span class="chip">Logo · Poster · Screen</span>
+            <span class="chip">p5.js implementation</span>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="#outputs">View Final Outputs</a>
+            <a class="btn btn--ghost" href="#guidelines">Brand Guidelines</a>
+          </div>
+
+          <div class="metaBox">
+            <div><span class="metaLabel">Team</span> Kaitlyn Ogg · Ava Kenneweg · Nabil Arrafi</div>
+            <div><span class="metaLabel">Concept</span> Connection · Trust · Flow</div>
+            <div><span class="metaLabel">System proof</span> Seeds generate reproducible variations</div>
+          </div>
+        </div>
+
+        <div class="hero__preview">
+          <button class="preview" data-lightbox="images/poster_p1_web.png" data-title="Poster (Final)">
+            <img src="images/poster_p1_web.png" alt="Poster preview" loading="lazy" />
+            <span>Poster (Final)</span>
+          </button>
+
+          <button class="preview" data-lightbox="images/poster-1_p1_web.png" data-title="Poster (Variation)">
+            <img src="images/poster-1_p1_web.png" alt="Poster variation preview" loading="lazy" />
+            <span>Poster (Variation)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outputs -->
+    <section class="section" id="outputs">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Final Outputs</h2>
+          <p class="muted">Click any image to open it full size. These outputs come from the same generative rules at different scales.</p>
+        </div>
+
+        <div class="grid">
+          <!-- Logo -->
+          <article class="card">
+            <button class="card__imgBtn" data-lightbox="images/logo_p1_web.png" data-title="Logo (200×200)">
+              <img class="card__img card__img--logo" src="images/logo_p1_web.png" alt="Logo output" loading="lazy" />
+            </button>
+            <div class="card__body">
+              <h3>Logo</h3>
+              <p class="muted">200×200 · Generated variation (seeded)</p>
+              <div class="row">
+                <a class="btn btn--small btn--ghost" href="images/logo_p1_web.png" download>Download PNG</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Poster Final -->
+          <article class="card">
+            <button class="card__imgBtn" data-lightbox="images/poster_p1_web.png" data-title="Poster (1400×2100) — Final">
+              <img class="card__img" src="images/poster_p1_web.png" alt="Poster final output" loading="lazy" />
+            </button>
+            <div class="card__body">
+              <h3>Poster (Final)</h3>
+              <p class="muted">1400×2100 · “Snapshot” of motion + flow</p>
+              <div class="row">
+                <a class="btn btn--small btn--ghost" href="images/poster_p1_web.png" download>Download PNG</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Poster Variation -->
+          <article class="card">
+            <button class="card__imgBtn" data-lightbox="images/poster-1_p1_web.png" data-title="Poster (1400×2100) — Variation">
+              <img class="card__img" src="images/poster-1_p1_web.png" alt="Poster variation output" loading="lazy" />
+            </button>
+            <div class="card__body">
+              <h3>Poster (Variation)</h3>
+              <p class="muted">1400×2100 · Different seed, same rules</p>
+              <div class="row">
+                <a class="btn btn--small btn--ghost" href="images/poster-1_p1_web.png" download>Download PNG</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guidelines -->
+    <section class="section section--alt" id="guidelines">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Brand Guidelines</h2>
+          <p class="muted">The system is designed to be consistent (recognizable) and flexible (endless variations).</p>
+        </div>
+
+        <div class="twoCol">
+          <div class="panel">
+            <h3>Brand story</h3>
+            <p class="muted">
+              Mastercard is a global payments network built on trust and connection. Our system visualizes
+              the brand as a reliable, continuous flow: two circles create a stable core identity, while motion
+              and generative variation communicate scale and adaptability across platforms.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Audience</h3>
+            <ul>
+              <li><strong>Consumers:</strong> digital-first users who expect speed and clarity.</li>
+              <li><strong>Merchants:</strong> businesses that need reliability and consistency.</li>
+              <li><strong>Partners:</strong> fintech and developers building on payment infrastructure.</li>
+              <li><strong>Context:</strong> screens, signage, social assets, and brand touchpoints.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Colour palette</h3>
+            <div class="swatchGrid" aria-label="Colour palette">
+              <div class="swatchItem">
+                <div class="swatchDot" style="background:#EB001B"></div>
+                <div>
+                  <div class="swatchName">Mastercard Red</div>
+                  <div class="muted"><code>#EB001B</code></div>
+                </div>
+              </div>
+
+              <div class="swatchItem">
+                <div class="swatchDot" style="background:#FF5F00"></div>
+                <div>
+                  <div class="swatchName">Mastercard Orange</div>
+                  <div class="muted"><code>#FF5F00</code></div>
+                </div>
+              </div>
+
+              <div class="swatchItem">
+                <div class="swatchDot" style="background:#0B0F18"></div>
+                <div>
+                  <div class="swatchName">Deep Night (Background)</div>
+                  <div class="muted"><code>#0B0F18</code></div>
+                </div>
+              </div>
+
+              <div class="swatchItem">
+                <div class="swatchDot" style="background:#FFFFFF"></div>
+                <div>
+                  <div class="swatchName">White (Text/Accents)</div>
+                  <div class="muted"><code>#FFFFFF</code></div>
+                </div>
+              </div>
+            </div>
+
+            <p class="muted">
+              <strong>Colour rule:</strong> red and orange must always overlap at least partially.
+              Transparency can be used to emphasize the shared overlap zone (“connection”).
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Typography</h3>
+            <ul>
+              <li><strong>Style:</strong> clean geometric sans-serif to match clarity and trust.</li>
+              <li><strong>Hierarchy:</strong> uppercase headlines + short body copy.</li>
+              <li><strong>Use:</strong> type anchors the layout; motion carries expression.</li>
+            </ul>
+            <p class="muted">
+              Recommended (free) web font options: <strong>Inter</strong> or <strong>Montserrat</strong>.
+              (If you don’t want to load fonts, system fonts are acceptable for this assignment.)
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Design system rules</h3>
+            <ul>
+              <li><strong>Core form:</strong> always two circles (red + orange).</li>
+              <li><strong>Overlap:</strong> required—this is the “identity anchor.”</li>
+              <li><strong>Flow:</strong> orbiting particles represent transactions/network activity.</li>
+              <li><strong>Motion:</strong> sine/noise-based movement for smooth reliability.</li>
+              <li><strong>Variation:</strong> a numeric seed controls randomness for reproducibility.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Outputs mapping</h3>
+            <ul>
+              <li><strong>Logo (200×200):</strong> minimal, centered, instantly recognizable.</li>
+              <li><strong>Poster (1400×2100):</strong> higher density; “frozen moment” of motion.</li>
+              <li><strong>Animated screen (1080×1920):</strong> looping flow for signage/splash screens.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Process</h2>
+          <p class="muted">How we connected brand meaning to a generative system and produced final deliverables.</p>
+        </div>
+
+        <div class="twoCol">
+          <div class="panel">
+            <h3>Goals</h3>
+            <ul>
+              <li><strong>Primary:</strong> Make the identity readable instantly (two-circle overlap = Mastercard).</li>
+              <li><strong>Secondary:</strong> Communicate “flow” and “network movement” through motion and particles.</li>
+              <li><strong>Success criteria:</strong> Consistent brand recognition across multiple seeds + clean compositions at all sizes.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Audience & context</h3>
+            <ul>
+              <li><strong>Audience:</strong> digital-first consumers, merchants, and fintech partners.</li>
+              <li><strong>Use cases:</strong> digital signage, app/splash environments, posters, social assets.</li>
+              <li><strong>Need:</strong> fast scanning, high contrast, and a flexible identity that scales.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Key design decisions</h3>
+            <ul>
+              <li><strong>Constraint first:</strong> we locked the two-circle overlap before adding variation.</li>
+              <li><strong>Composition:</strong> centered logo, structured poster layout, full-bleed screen feel.</li>
+              <li><strong>Hierarchy:</strong> bold headline + minimal copy so visuals stay dominant.</li>
+              <li><strong>Consistency:</strong> neutral backgrounds keep brand colours crisp and recognizable.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Iteration & evaluation</h3>
+            <ul>
+              <li><strong>What we tested:</strong> circle spacing, overlap strength, and particle density.</li>
+              <li><strong>What improved:</strong> clearer overlap zone and more controlled particle field for readability.</li>
+              <li><strong>Why it’s better:</strong> maintains identity at a glance while still showing motion/flow at larger scales.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Technical implementation (p5.js)</h3>
+            <ul>
+              <li><strong>Objects:</strong> circles and particles coded as reusable components.</li>
+              <li><strong>Arrays + loops:</strong> manage and render particle systems efficiently.</li>
+              <li><strong>Motion:</strong> sine/noise to keep movement smooth (trustworthy, not chaotic).</li>
+              <li><strong>Seeds:</strong> enable reproducible outputs for consistent brand variants.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Proof it’s a design system</h3>
+            <ul>
+              <li><strong>Same rules</strong> generate every output.</li>
+              <li><strong>Different seeds</strong> create new variations without breaking recognition.</li>
+              <li><strong>Different sizes</strong> show the system scales from logo → poster → screen.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="section" id="reflection">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Reflection</h2>
+          <p class="muted">A short, grading-friendly reflection on outcomes and learning.</p>
+        </div>
+
+        <div class="panel">
+          <p>
+            <strong>What worked:</strong>
+            Building strict constraints first (two circles + overlap) gave us strong brand recognition immediately.
+            After that, particles and motion could vary freely without losing the identity.
+          </p>
+          <p>
+            <strong>What changed through iteration:</strong>
+            We reduced visual noise by controlling particle density and keeping backgrounds neutral, which made the overlap
+            zone more readable—especially at poster scale.
+          </p>
+          <p>
+            <strong>Next steps:</strong>
+            We would test the system across more contexts (mobile UI, social crops, signage distance) and define
+            seed “sets” for specific campaigns or regions.
+          </p>
+        </div>
+
+        <div class="credits">
+          <div class="muted"><strong>Team:</strong> Kaitlyn Ogg · Ava Kenneweg · Nabil Arrafi</div>
+          <div class="muted"><strong>Course:</strong> CCT 460 — Advanced Web Design</div>
+          <div class="muted"><strong>Assignment:</strong> Design System Concept & Branding</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p class="muted">Submission page · final outputs + guidelines + process</p>
+        <a class="toTop" href="#top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__bg" data-close="true"></div>
+
+    <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="lightbox__close" data-close="true" aria-label="Close">✕</button>
+      <div class="lightbox__title" id="lbTitle"></div>
+      <img class="lightbox__img" id="lbImg" alt="" />
+    </div>
+  </div>
+
+  <script>
+    // Lightbox logic
+    const lightbox = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lbImg");
+    const lbTitle = document.getElementById("lbTitle");
+
+    function openLB(src, title) {
+      lbImg.src = src;
+      lbImg.alt = title || "Preview";
+      lbTitle.textContent = title || "";
+      lightbox.classList.add("isOpen");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeLB() {
+      lightbox.classList.remove("isOpen");
+      lightbox.setAttribute("aria-hidden", "true");
+      lbImg.src = "";
+      lbTitle.textContent = "";
+      document.body.style.overflow = "";
+    }
+
+    document.addEventListener("click", (e) => {
+      const openBtn = e.target.closest("[data-lightbox]");
+      if (openBtn) openLB(openBtn.dataset.lightbox, openBtn.dataset.title);
+      if (e.target?.dataset?.close === "true") closeLB();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("isOpen")) closeLB();
+    });
+  </script>
+</body>
+</html>
